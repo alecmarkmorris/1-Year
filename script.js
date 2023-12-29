@@ -25,7 +25,7 @@ const questions = [
         ]
     },
     {
-        question: "Where kissed the other one first?",
+        question: "Who kissed the other one first?",
         answers: [
             {text: "Alli", correct: true},
             {text: "Alec", correct: false},
@@ -43,17 +43,35 @@ const questions = [
     {
         question: "When did we officially start dating?",
         answers: [
-            {text: "12/31/22", correct: true},
-            {text: "01/01/23", correct: false},
             {text: "12/30/22", correct: false},
+            {text: "01/01/23", correct: false},
+            {text: "12/31/22", correct: true},
             {text: "11/29/22", correct: false},
         ]
     },
     {
         question: "Who was the first person to text?",
         answers: [
-            {text: "Alli", correct: true},
             {text: "Alec", correct: false},
+            {text: "Alli", correct: true},
+        ]
+    },
+    {
+        question: "First out of state vacation?",
+        answers: [
+            {text: "EDCLV", correct: false},
+            {text: "Beyond Wonder Land", correct: true},
+            {text: "Colorado", correct: false},
+            {text: "Escape", correct: false},
+        ]
+    },
+    {
+        question: "First music event together?",
+        answers: [
+            {text: "Beyond Wonder Land", correct: false},
+            {text: "Phoenix Lights", correct: false},
+            {text: "Decadence", correct: false},
+            {text: "Raggaeton", correct: true},
         ]
     }
 ];
@@ -117,8 +135,11 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`
+        if ( score == questions.length) {
+            questionElement.innerHTML = "Good Job! You got all of them correct!";
+        }else(
+            questionElement.innerHTML = `You scored ${score} out of ${questions.length}!\tGet all of the questions correct for a prize`
+        )
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }   
