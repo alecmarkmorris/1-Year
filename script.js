@@ -138,7 +138,7 @@ function showScore(){
         if ( score == questions.length) {
             questionElement.innerHTML = "Good Job! You got all of them correct!";
         }else(
-            questionElement.innerHTML = `You scored ${score} out of ${questions.length}!\tGet all of the questions correct for a prize`
+            questionElement.innerHTML = `You scored ${score} out of ${questions.length}! Get all of the questions correct for a prize`
         )
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
