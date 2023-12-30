@@ -97,7 +97,7 @@ const questions = [
         answers: [
             {text: "Outside Buffalo", correct: false},
             {text: "Mellow Mushroom", correct: false},
-            {text: "Halloween part", correct: false},
+            {text: "Halloween party", correct: false},
             {text: "Dave & Buster's", correct: true},
         ]
     }
@@ -163,7 +163,7 @@ function selectAnswer(e){
 function showScore(){
     resetState();
         if ( score == questions.length) {
-            questionElement.innerHTML = "Good Job! You got all of them correct! Here is your prize.";
+            questionElement.innerHTML = "Good Job! You got all of them correct! Here is your prize:";
             var video = document.getElementById("video");
             video.style.display = "block";
         }else(
