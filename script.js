@@ -91,6 +91,15 @@ const questions = [
             {text: "Halloween", correct: true},
             {text: "New Years", correct: false},
         ]
+    },
+    {
+        question: "Where did we hold hands for the first time?",
+        answers: [
+            {text: "Outside Buffalo", correct: false},
+            {text: "Mellow Mushroom", correct: false},
+            {text: "Halloween part", correct: false},
+            {text: "Dave & Buster's", correct: true},
+        ]
     }
 ];
 
