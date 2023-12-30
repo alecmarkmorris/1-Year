@@ -70,3 +70,8 @@ body{
 .incorrect{
     background: #ff9393;
 }
+
+.video{
+    display: block;
+    margin: auto;
+}

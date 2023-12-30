@@ -163,7 +163,9 @@ function selectAnswer(e){
 function showScore(){
     resetState();
         if ( score == questions.length) {
-            questionElement.innerHTML = "Good Job! You got all of them correct!";
+            questionElement.innerHTML = "Good Job! You got all of them correct! Here is your prize.";
+            var video = document.getElementById("video");
+            video.style.display = "block";
         }else(
             questionElement.innerHTML = `You scored ${score} out of ${questions.length}! Get all of the questions correct for a prize`
         )
