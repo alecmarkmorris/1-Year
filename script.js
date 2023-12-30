@@ -82,6 +82,15 @@ const questions = [
             {text: "November 6th 2022", correct: false},
             {text: "December 25th 2022", correct: false},
         ]
+    },
+    {
+        question: "What was the first holiday we spent together?",
+        answers: [
+            {text: "Christmas", correct: false},
+            {text: "Thankgiving", correct: false},
+            {text: "Halloween", correct: true},
+            {text: "New Years", correct: false},
+        ]
     }
 ];
 
