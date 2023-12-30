@@ -73,6 +73,15 @@ const questions = [
             {text: "Decadence", correct: false},
             {text: "Raggaeton", correct: true},
         ]
+    },
+    {
+        question: "When was our first kiss?",
+        answers: [
+            {text: "October 3rd 2022", correct: true},
+            {text: "October 23rd 2022", correct: false},
+            {text: "November 6th 2022", correct: false},
+            {text: "December 25th 2022", correct: false},
+        ]
     }
 ];
 
