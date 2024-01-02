@@ -9,7 +9,7 @@ const questions = [
         ]
     },
     {
-        question: "Where was out first date?",
+        question: "Where was our first date?",
         answers: [
             {text: "McDonald's", correct: false},
             {text: "Nandos", correct: false},
